@@ -1,0 +1,29 @@
+# Get Users
+GET http://localhost:5000/users
+Authorization: Bearer Token
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsIm5hbWUiOiJyYXVwIiwiZW1haWwiOiJyYXVwQGdtYWlsLmNvbSIsImlhdCI6MTY4MzI2NzM5OCwiZXhwIjoxNjgzMjY3NDE4fQ.k0trL5fyI48Jc-wLovVgSvp7ZEznchBN6fbUSDGyyMI
+
+###
+
+# Register
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name" : "raup1",
+  "email": "raup1@gmail.com",
+  "password": "raup",
+  "confirmPassword": "raup"
+}
+
+###
+
+# Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "raup@gmail.com",
+  "password": "raup"
+}
